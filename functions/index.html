@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+        body {
+            background: darkslategray;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        input[type=button] {
+            display: block;
+            height: 40px;
+            width: 177px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" name="num" id="num">
+    <label for="num">Número 1</label>
+    <br>
+    <input type="button" value="X2" onclick="multiplicarPorDois()">
+
+    <input type="text" name="res" id="res">
+
+    <script>
+                    let valor = document.getElementById("num");
+        function multiplicarPorDois(valor) {
+            return valor * 2;
+        };
+        let resultado = multiplicarPorDois(valor);
+        console.log(resultado);
+    </script>
+</body>
+</html>
